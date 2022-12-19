@@ -15,25 +15,28 @@ class Character:
         self.defense = defense
         self.intelligence = intelligence
 
-    def vivo(self):
+    def alive(self):
         return self.life > 0
 
-    def muerto(self):
+    def dead(self):
         self
-            print("Su personaje a muerto ya que tiene¨{self}")
-    def 
+            print(f"Su personaje a muerto ya que tiene"{self.life})
+    
 
-class Strength(Character):
+class Swordman(Character):
     def __init__(self,nick_name,attack,defense,intelligence,life,strength):
     super().__init__(nick_name,life):
     self.strength = strength
 
-class Magic(Character):
+class Wizard(Character):
     def __init__(self,nick_name,attack,defense,intelligence,life,magic):
     super().__init__(nick_name,life):
     self.magic = magic
 
-class Healing(Character):
+class Healer(Character):
     def __init__(self,nick_name,attack,defense,intelligence,life,healing):
     super().__init__(nick_name,life)
     self.healing = healing
+
+
+    
